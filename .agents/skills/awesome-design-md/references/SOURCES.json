@@ -1,0 +1,39 @@
+{
+  "repository": "https://github.com/VoltAgent/awesome-design-md",
+  "commit": "fcc70284932276d085f01ef9f83edde90b1258cb",
+  "reference_count": 84,
+  "selected": [
+    "oura",
+    "framer"
+  ],
+  "files": [
+    {
+      "path": "references/oura-DESIGN.md",
+      "upstream_path": "design-md/oura/DESIGN.md",
+      "git_blob_sha1": "73fddfabb4fe87d6d180a24f6a794b1fc743b568",
+      "source_url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/oura/DESIGN.md",
+      "sha256": "8674dbeb48bf7e3ff5271e79a6222084118ba1630db4a2199d1492568850fa08"
+    },
+    {
+      "path": "references/framer-DESIGN.md",
+      "upstream_path": "design-md/framer/DESIGN.md",
+      "git_blob_sha1": "8351555233ee9379c47bfb57c557e64f0b6c7488",
+      "source_url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/design-md/framer/DESIGN.md",
+      "sha256": "a5d47dddacf5a04577cec0be6fe0fc53b7402254c7686874af3e59bcc7588cb4"
+    },
+    {
+      "path": "references/upstream-README.md",
+      "upstream_path": "README.md",
+      "git_blob_sha1": "dbaa687886f117cc665a08502ead71099af783ae",
+      "source_url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/README.md",
+      "sha256": "ba50d84d7cfb4b607958e75549eec2cc0db8ef27bd6ce768de1a64c2d51d7e85"
+    },
+    {
+      "path": "references/LICENSE",
+      "upstream_path": "LICENSE",
+      "git_blob_sha1": "5cea5d78a41df83eafe1fb9fc0710675a5b7acf6",
+      "source_url": "https://github.com/VoltAgent/awesome-design-md/blob/fcc70284932276d085f01ef9f83edde90b1258cb/LICENSE",
+      "sha256": "6d4bdc9a9cf30e7beb593475fdcdbf29f981ea6bd7923f202866145409f87b44"
+    }
+  ]
+}

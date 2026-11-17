@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f3eb">
+  <meta name="description" content="AURA — светильник, который подстраивает цвет света под вас и создаёт уют. Выберите серый или белый корпус, пастельный цвет освещения и яркость в интерактивном концепте.">
+  <meta property="og:title" content="AURA — свет, который подстраивается под вас">
+  <meta property="og:description" content="Цвет света под ваше настроение. AURA подстраивается под вас и создаёт уют — для работы, отдыха и спокойных вечеров.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aura-light-studio.littledawn8.chatgpt.site">
+  <link rel="canonical" href="https://aura-light-studio.littledawn8.chatgpt.site">
+  <title>AURA — свет, который подстраивается под вас</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="preload" as="font" href="./assets/manrope-regular.ttf" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержимому</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+    <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 1v3m0 16v3M1 12h3m16 0h3M4.2 4.2l2.1 2.1m11.4 11.4 2.1 2.1M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></symbol>
+    <symbol id="icon-star" viewBox="0 0 32 32"><path d="M16 0v32M0 16h32M4.7 4.7l22.6 22.6M4.7 27.3 27.3 4.7"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <a class="wordmark" href="#" aria-label="AURA — на главную"><img class="brand-lockup" src="./assets/aura-logo.svg" width="272" height="96" alt="AURA"></a>
+    <nav class="desktop-nav" aria-label="Основная навигация">
+      <a href="#about">О светильнике</a><a href="#moods">Попробовать свет</a><a href="#thoughts">Философия</a><a href="#faq">Вопросы</a>
+    </nav>
+    <button class="button button-small button-primary header-cta" data-open-config aria-label="Настроить AURA"><span class="button-label-full">Настроить AURA</span><span class="button-label-short" aria-hidden="true">Настроить</span><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+    <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+  </header>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Мобильная навигация" hidden>
+    <a href="#about">О светильнике</a><a href="#moods">Попробовать свет</a><a href="#thoughts">Философия</a><a href="#faq">Вопросы</a>
+  </nav>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow intro-animate"><span class="live-dot"></span> СВЕТ В ВАШЕМ РИТМЕ</div>
+        <h1 id="hero-title"><span class="title-line">Ваш цвет.</span><span class="title-line">Ваш <em>уют.</em><svg class="title-spark" viewBox="0 0 32 32" aria-hidden="true"><use href="#icon-star"/></svg></span></h1>
+        <p class="hero-description intro-animate">AURA — светильник, который подстраивает цвет света под вас и создаёт уют.<br class="desktop-break"> Для работы, отдыха и спокойных вечеров.</p>
+        <div class="hero-actions intro-animate">
+          <button class="button button-primary" data-open-config>Настроить свой свет <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow"/></svg></button>
+          <a class="watch-link" href="#moods"><span class="play-circle"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m4 2 6 4-6 4Z" fill="currentColor"/></svg></span>Посмотреть режимы</a>
+        </div>
+        <div class="hero-note intro-animate"><span class="tiny-swatches" aria-hidden="true"><i></i><i></i></span><p>Для чтения, <strong>отдыха и разговоров.</strong></p></div>
+      </div>
+
+      <div class="hero-art lamp-stage" id="hero-stage" data-on="true">
+        <span class="art-index">ОБЪЕКТ № 001</span>
+        <span class="art-edition">A LITTLE LIGHT.<br>A LOT OF FEELING.</span>
+        <div class="hero-disc" aria-hidden="true"></div>
+        <div class="orbit orbit-one" aria-hidden="true"></div>
+        <div class="orbit orbit-two" aria-hidden="true"></div>
+        <div class="lamp-halo" aria-hidden="true"></div>
+        <div class="hero-lamp-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="680" height="740" viewBox="0 0 680 740" fill="none" class="hero-lamp lamp-illustration" data-lamp="hero" role="img" aria-label="AURA: белый корпус и мягкий персиковый свет">
+<defs>
+<linearGradient id="hero-cap" x1="190" y1="122" x2="502" y2="402" gradientUnits="userSpaceOnUse"><stop stop-color="#fffefa" style="stop-color:var(--body-hi,#fffefa)" /><stop offset=".28" stop-color="#eeece7" style="stop-color:var(--body-mid,#eeece7)" /><stop offset=".65" stop-color="#dcdcd7" style="stop-color:var(--body-base,#dcdcd7)" /><stop offset="1" stop-color="#acafb1" style="stop-color:var(--body-dark,#acafb1)" /></linearGradient>
+<linearGradient id="hero-stem" x1="245" y1="480" x2="429" y2="485" gradientUnits="userSpaceOnUse"><stop stop-color="#acafb1" style="stop-color:var(--body-dark,#acafb1)" /><stop offset=".2" stop-color="#dcdcd7" style="stop-color:var(--body-base,#dcdcd7)" /><stop offset=".44" stop-color="#fffefa" style="stop-color:var(--body-hi,#fffefa)" /><stop offset=".68" stop-color="#eeece7" style="stop-color:var(--body-mid,#eeece7)" /><stop offset="1" stop-color="#acafb1" style="stop-color:var(--body-dark,#acafb1)" /></linearGradient>
+<linearGradient id="hero-rim" x1="340" y1="304" x2="340" y2="393" gradientUnits="userSpaceOnUse"><stop stop-color="#dcdcd7" style="stop-color:var(--body-base,#dcdcd7)" /><stop offset=".47" stop-color="#acafb1" style="stop-color:var(--body-dark,#acafb1)" /><stop offset="1" stop-color="#eeece7" style="stop-color:var(--body-mid,#eeece7)" /></linearGradient>
+<radialGradient id="hero-light"><stop offset="0" stop-color="#fffaf6" stop-opacity="1" data-light-stop="core" /><stop offset=".58" stop-color="#f3c5aa" stop-opacity="1" data-light-stop="color" style="stop-color:rgb(var(--light-rgb,243,197,170))" /><stop offset="1" stop-color="#f3c5aa" stop-opacity=".8" data-light-stop="color" style="stop-color:rgb(var(--light-rgb,243,197,170))" /></radialGradient><radialGradient id="hero-highlight"><stop stop-color="#ffffff" stop-opacity=".6" /><stop offset="1" stop-color="#ffffff" stop-opacity="0" /></radialGradient>
+<radialGradient id="hero-spill"><stop offset="0" stop-color="#f3c5aa" stop-opacity=".65" data-light-stop="color" style="stop-color:rgb(var(--light-rgb,243,197,170))" /><stop offset="1" stop-color="#f3c5aa" stop-opacity="0" data-light-stop="color" style="stop-color:rgb(var(--light-rgb,243,197,170))" /></radialGradient><filter id="hero-shadow"><feGaussianBlur stdDeviation="15" /></filter>
+<filter id="hero-grain"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch" /><feColorMatrix type="saturate" values="0" /><feComponentTransfer><feFuncA type="linear" slope=".035" /></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply" /></filter>
+<filter id="hero-light-soft" x="-40%" y="-100%" width="180%" height="300%"><feGaussianBlur stdDeviation="18" /></filter></defs>
+<ellipse cx="351" cy="640" rx="183" ry="23" fill="#303827" fill-opacity=".25" filter="url(#hero-shadow)" />
+<g class="lamp-power"><ellipse cx="345" cy="618" rx="269" ry="90" fill="url(#hero-spill)" class="lamp-emission" opacity=".65" />
+</g><g class="lamp-power"><ellipse class="lamp-emission" cx="341" cy="387" rx="207" ry="67" fill="url(#hero-spill)" filter="url(#hero-light-soft)" opacity=".65" /></g><path d="M397 606C446 635 459 650 516 648C560 647 591 636 634 653" stroke="#85898d" stroke-opacity=".5" stroke-width="2.5" />
+<path d="M293 330C291 403 280 508 254 583C245 609 267 624 339 625C409 626 438 610 429 583C403 507 392 403 389 330H293Z" fill="url(#hero-stem)" />
+<ellipse cx="341" cy="605" rx="85" ry="18" fill="#acafb1" fill-opacity=".22" style="fill:var(--body-dark,#acafb1)" />
+<path d="M302 385C301 439 292 534 275 582" stroke="#fffefa" stroke-opacity=".25" stroke-width="1.5" style="stroke:var(--body-hi,#fffefa)" />
+<path d="M318 393C318 450 313 547 305 603" stroke="#fffefa" stroke-opacity=".16" stroke-width="1.5" style="stroke:var(--body-hi,#fffefa)" />
+<path d="M364 393C364 450 369 547 377 603" stroke="#acafb1" stroke-opacity=".11" stroke-width="1.5" style="stroke:var(--body-dark,#acafb1)" />
+<path d="M379 386C383 449 391 534 409 582" stroke="#acafb1" stroke-opacity=".13" stroke-width="1.5" style="stroke:var(--body-dark,#acafb1)" />
+<ellipse cx="341" cy="335" rx="224" ry="54" fill="url(#hero-rim)" />
+<g class="lamp-power"><ellipse cx="341" cy="344" rx="198" ry="33" fill="url(#hero-light)" class="lamp-emission" opacity=".65" />
+</g><path d="M117 328C120 206 208 108 325 103C451 98 560 193 565 328C565 349 468 374 342 374C216 374 117 349 117 328Z" fill="url(#hero-cap)" />
+<ellipse cx="270" cy="209" rx="124" ry="105" transform="rotate(-29 270 209)" fill="url(#hero-highlight)" opacity=".65" />
+<path d="M119 327C125 348 222 373 341 373C459 373 556 349 563 328" stroke="#fffefa" stroke-opacity=".62" stroke-width="1.8" style="stroke:var(--body-hi,#fffefa)" />
+<ellipse cx="339" cy="598" rx="9" ry="3" fill="#acafb1" fill-opacity=".65" style="fill:var(--body-dark,#acafb1)" />
+<path d="M336 596L336 600M343 596L343 600" stroke="#fffefa" stroke-opacity=".7" stroke-width=".8" style="stroke:var(--body-hi,#fffefa)" />
+</svg></div>
+        <span class="floating-note"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-sun"/></svg><span><span id="hero-light-name">Персиковый</span><br>цвет освещения</span></span>
+        <button class="power-switch" id="hero-power" aria-pressed="true" aria-label="Выключить свет"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v8m-5-5a8 8 0 1 0 10 0"/></svg></button>
+        <div class="art-bottom"><span><span class="status-dot"></span> <span id="hero-light-status">СВЕТ ВКЛЮЧЁН</span></span><span>ВЫБЕРИТЕ ЦВЕТ КОРПУСА.</span></div>
+        <div class="hero-colors" role="group" aria-label="Цвет корпуса">
+          <span class="hero-finish-kind">Корпус</span>
+          <button class="color-dot selected" data-finish="white" aria-label="Белый корпус" aria-pressed="true" style="--swatch:#f3f1ed"></button>
+          <button class="color-dot" data-finish="gray" aria-label="Серый корпус" aria-pressed="false" style="--swatch:#c8ccd1"></button>
+          <span id="hero-finish-label" aria-live="polite">Белый</span>
+        </div>
+      </div>
+      <a class="hero-scroll" href="#about"><span>ЗНАКОМЬТЕСЬ С AURA</span><span aria-hidden="true">↓</span></a>
+    </section>
+
+    <div class="marquee" role="img" aria-label="Меньше суеты. Больше уюта. Просто AURA.">
+      <div class="marquee-inner">
+        <span class="marquee-caption" aria-hidden="true">AURA / EVERYDAY RITUALS</span>
+        <div class="marquee-window" aria-hidden="true"><div class="marquee-track">
+          <div class="marquee-group"><span class="marquee-item">меньше <em>суеты</em></span><span class="marquee-divider"></span><span class="marquee-item">больше <em>уюта</em></span><span class="marquee-divider"></span><span class="marquee-item">просто <em>AURA</em></span><span class="marquee-divider"></span><span class="marquee-item" data-repeat>меньше <em>суеты</em></span><span class="marquee-divider"></span><span class="marquee-item" data-repeat>больше <em>уюта</em></span><span class="marquee-divider"></span><span class="marquee-item" data-repeat>просто <em>AURA</em></span><span class="marquee-divider"></span></div>
+          <div class="marquee-group"><span class="marquee-item">меньше <em>суеты</em></span><span class="marquee-divider"></span><span class="marquee-item">больше <em>уюта</em></span><span class="marquee-divider"></span><span class="marquee-item">просто <em>AURA</em></span><span class="marquee-divider"></span><span class="marquee-item" data-repeat>меньше <em>суеты</em></span><span class="marquee-divider"></span><span class="marquee-item" data-repeat>больше <em>уюта</em></span><span class="marquee-divider"></span><span class="marquee-item" data-repeat>просто <em>AURA</em></span><span class="marquee-divider"></span></div>
+        </div></div>
+      </div>
+    </div>
+
+    <section class="about section-shell" id="about" aria-labelledby="about-title">
+      <div class="section-top reveal"><span class="eyebrow">01 / СВЕТ, С КОТОРЫМ УЮТНО</span><svg class="section-asterisk" aria-hidden="true"><use href="#icon-star"/></svg></div>
+      <div class="about-heading reveal"><h2 id="about-title">Под ваше<br><em>настроение.</em></h2><p>Утром — сосредоточиться. Вечером — расслабиться. Цвет и яркость света меняются вместе с вашим днём.</p></div>
+      <div class="about-grid">
+        <div class="interior-card reveal"><img src="./assets/interior.jpg" alt="Тёплая гостиная с мягким диваном, натуральным деревом и светом из больших окон" width="1800" height="1200" loading="lazy"><span class="photo-caption"><span class="live-dot"></span> МЕСТО, ГДЕ МОЖНО ВЫДОХНУТЬ</span><span class="photo-number">01—03</span></div>
+        <div class="philosophy-card reveal"><span class="eyebrow">МЕНЬШЕ, НО ЛУЧШЕ</span><div class="abstract-light" aria-hidden="true"><div></div><div></div><div></div></div><h3>Ничего лишнего.<br>Только мягкий <em>свет.</em></h3><p>Шесть пастельных оттенков освещения — от персикового до небесного. Серый или белый корпус остаётся нейтральным.</p><a class="text-link" href="#moods">Попробовать режимы <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow"/></svg></a></div>
+      </div>
+    </section>
+
+    <section class="moods" id="moods" aria-labelledby="moods-title" data-mood="relax">
+      <div class="mood-copy">
+        <span class="eyebrow reveal">02 / СВЕТ ДЛЯ РАБОТЫ И ОТДЫХА</span>
+        <h2 class="reveal" id="moods-title">Меняет цвет.<br>Создаёт <em>уют.</em></h2>
+        <p class="mood-intro reveal">Начните с готового сценария или выберите свой пастельный цвет. Яркость настраивается отдельно.</p>
+        <div class="mood-tabs" role="tablist" aria-orientation="horizontal" aria-label="Сценарии освещения">
+          <button role="tab" id="tab-focus" aria-controls="mood-panel" aria-selected="false" tabindex="-1" data-mood="focus"><span class="tab-icon" aria-hidden="true">↗</span><span class="tab-copy"><span>В потоке</span><small>Для работы</small></span><span class="tab-time">90%</span></button>
+          <button role="tab" id="tab-relax" aria-controls="mood-panel" aria-selected="true" tabindex="0" data-mood="relax" class="active"><span class="tab-icon" aria-hidden="true">☀</span><span class="tab-copy"><span>На паузе</span><small>Для отдыха</small></span><span class="tab-time">65%</span></button>
+          <button role="tab" id="tab-evening" aria-controls="mood-panel" aria-selected="false" tabindex="-1" data-mood="evening"><span class="tab-icon" aria-hidden="true">☾</span><span class="tab-copy"><span>Без спешки</span><small>Перед сном</small></span><span class="tab-time">30%</span></button>
+        </div>
+        <fieldset class="scene-light-picker"><legend>Цвет освещения <span id="scene-light-label">Персиковый</span></legend><div class="light-palette"><button type="button" class="light-option selected" data-light="peach" aria-pressed="true" style="--light-swatch:#f3c5aa"><i aria-hidden="true"></i><span>Персиковый</span></button><button type="button" class="light-option" data-light="rose" aria-pressed="false" style="--light-swatch:#eac6d3"><i aria-hidden="true"></i><span>Пудровый</span></button><button type="button" class="light-option" data-light="lavender" aria-pressed="false" style="--light-swatch:#cfc8eb"><i aria-hidden="true"></i><span>Лавандовый</span></button><button type="button" class="light-option" data-light="sky" aria-pressed="false" style="--light-swatch:#bdd7e9"><i aria-hidden="true"></i><span>Небесный</span></button><button type="button" class="light-option" data-light="mint" aria-pressed="false" style="--light-swatch:#c7ddd0"><i aria-hidden="true"></i><span>Мятный</span></button><button type="button" class="light-option" data-light="butter" aria-pressed="false" style="--light-swatch:#f0e1b5"><i aria-hidden="true"></i><span>Сливочный</span></button></div></fieldset>
+        <div class="mood-panel" id="mood-panel" role="tabpanel" aria-labelledby="tab-relax" tabindex="0"><p id="mood-description">Для спокойной паузы и любимой музыки. Выберите пастельный оттенок и подходящую яркость.</p></div>
+      </div>
+      <div class="mood-visual">
+        <div class="scene-window" aria-hidden="true"><span></span><span></span></div>
+        <div class="scene-glow" aria-hidden="true"></div>
+        <div class="scene-sun" aria-hidden="true"></div>
+        <div class="scene-table" aria-hidden="true"></div>
+        <div class="scene-book" aria-hidden="true"><span>a slower<br>kind of life.</span></div>
+        <div class="scene-cup" aria-hidden="true"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="680" height="740" viewBox="0 0 680 740" fill="none" class="scene-lamp lamp-illustration" data-lamp="scene" role="img" aria-label="AURA: белый корпус и мягкий персиковый свет">
+<defs>
+<linearGradient id="scene-cap" x1="190" y1="122" x2="502" y2="402" gradientUnits="userSpaceOnUse"><stop stop-color="#fffefa" style="stop-color:var(--body-hi,#fffefa)" /><stop offset=".28" stop-color="#eeece7" style="stop-color:var(--body-mid,#eeece7)" /><stop offset=".65" stop-color="#dcdcd7" style="stop-color:var(--body-base,#dcdcd7)" /><stop offset="1" stop-color="#acafb1" style="stop-color:var(--body-dark,#acafb1)" /></linearGradient>
+<linearGradient id="scene-stem" x1="245" y1="480" x2="429" y2="485" gradientUnits="userSpaceOnUse"><stop stop-color="#acafb1" style="stop-color:var(--body-dark,#acafb1)" /><stop offset=".2" stop-color="#dcdcd7" style="stop-color:var(--body-base,#dcdcd7)" /><stop offset=".44" stop-color="#fffefa" style="stop-color:var(--body-hi,#fffefa)" /><stop offset=".68" stop-color="#eeece7" style="stop-color:var(--body-mid,#eeece7)" /><stop offset="1" stop-color="#acafb1" style="stop-color:var(--body-dark,#acafb1)" /></linearGradient>
+<linearGradient id="scene-rim" x1="340" y1="304" x2="340" y2="393" gradientUnits="userSpaceOnUse"><stop stop-color="#dcdcd7" style="stop-color:var(--body-base,#dcdcd7)" /><stop offset=".47" stop-color="#acafb1" style="stop-color:var(--body-dark,#acafb1)" /><stop offset="1" stop-color="#eeece7" style="stop-color:var(--body-mid,#eeece7)" /></linearGradient>
+<radialGradient id="scene-light"><stop offset="0" stop-color="#fffaf6" stop-opacity="1" data-light-stop="core" /><stop offset=".58" stop-color="#f3c5aa" stop-opacity="1" data-light-stop="color" style="stop-color:rgb(var(--light-rgb,243,197,170))" /><stop offset="1" stop-color="#f3c5aa" stop-opacity=".8" data-light-stop="color" style="stop-color:rgb(var(--light-rgb,243,197,170))" /></radialGradient><radialGradient id="scene-highlight"><stop stop-color="#ffffff" stop-opacity=".6" /><stop offset="1" stop-color="#ffffff" stop-opacity="0" /></radialGradient>
+<radialGradient id="scene-spill"><stop offset="0" stop-color="#f3c5aa" stop-opacity=".65" data-light-stop="color" style="stop-color:rgb(var(--light-rgb,243,197,170))" /><stop offset="1" stop-color="#f3c5aa" stop-opacity="0" data-light-stop="color" style="stop-color:rgb(var(--light-rgb,243,197,170))" /></radialGradient><filter id="scene-shadow"><feGaussianBlur stdDeviation="15" /></filter>
+<filter id="scene-grain"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch" /><feColorMatrix type="saturate" values="0" /><feComponentTransfer><feFuncA type="linear" slope=".035" /></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply" /></filter>
+<filter id="scene-light-soft" x="-40%" y="-100%" width="180%" height="300%"><feGaussianBlur stdDeviation="18" /></filter></defs>
+<ellipse cx="351" cy="640" rx="183" ry="23" fill="#303827" fill-opacity=".25" filter="url(#scene-shadow)" />
+<g class="lamp-power"><ellipse cx="345" cy="618" rx="269" ry="90" fill="url(#scene-spill)" class="lamp-emission" opacity=".65" />
+</g><g class="lamp-power"><ellipse class="lamp-emission" cx="341" cy="387" rx="207" ry="67" fill="url(#scene-spill)" filter="url(#scene-light-soft)" opacity=".65" /></g><path d="M397 606C446 635 459 650 516 648C560 647 591 636 634 653" stroke="#85898d" stroke-opacity=".5" stroke-width="2.5" />
+<path d="M293 330C291 403 280 508 254 583C245 609 267 624 339 625C409 626 438 610 429 583C403 507 392 403 389 330H293Z" fill="url(#scene-stem)" />
+<ellipse cx="341" cy="605" rx="85" ry="18" fill="#acafb1" fill-opacity=".22" style="fill:var(--body-dark,#acafb1)" />
+<path d="M302 385C301 439 292 534 275 582" stroke="#fffefa" stroke-opacity=".25" stroke-width="1.5" style="stroke:var(--body-hi,#fffefa)" />
+<path d="M318 393C318 450 313 547 305 603" stroke="#fffefa" stroke-opacity=".16" stroke-width="1.5" style="stroke:var(--body-hi,#fffefa)" />
+<path d="M364 393C364 450 369 547 377 603" stroke="#acafb1" stroke-opacity=".11" stroke-width="1.5" style="stroke:var(--body-dark,#acafb1)" />
+<path d="M379 386C383 449 391 534 409 582" stroke="#acafb1" stroke-opacity=".13" stroke-width="1.5" style="stroke:var(--body-dark,#acafb1)" />
+<ellipse cx="341" cy="335" rx="224" ry="54" fill="url(#scene-rim)" />
+<g class="lamp-power"><ellipse cx="341" cy="344" rx="198" ry="33" fill="url(#scene-light)" class="lamp-emission" opacity=".65" />
+</g><path d="M117 328C120 206 208 108 325 103C451 98 560 193 565 328C565 349 468 374 342 374C216 374 117 349 117 328Z" fill="url(#scene-cap)" />
+<ellipse cx="270" cy="209" rx="124" ry="105" transform="rotate(-29 270 209)" fill="url(#scene-highlight)" opacity=".65" />
+<path d="M119 327C125 348 222 373 341 373C459 373 556 349 563 328" stroke="#fffefa" stroke-opacity=".62" stroke-width="1.8" style="stroke:var(--body-hi,#fffefa)" />
+<ellipse cx="339" cy="598" rx="9" ry="3" fill="#acafb1" fill-opacity=".65" style="fill:var(--body-dark,#acafb1)" />
+<path d="M336 596L336 600M343 596L343 600" stroke="#fffefa" stroke-opacity=".7" stroke-width=".8" style="stroke:var(--body-hi,#fffefa)" />
+</svg>
+        <div class="scene-label"><span class="status-dot"></span><span id="scene-label">МОЖНО НИКУДА НЕ СПЕШИТЬ</span></div>
+        <div class="scene-controls"><div><span class="scene-control-title">Цвет света <i class="scene-color-dot" aria-hidden="true"></i></span><span class="scene-color-name" id="scene-color-name">Персиковый</span></div><span class="scene-divider"></span><div><label class="scene-control-title" for="scene-brightness">Яркость <output id="brightness-value" for="scene-brightness">65%</output></label><input type="range" id="scene-brightness" min="10" max="100" value="65" aria-label="Яркость света" style="--range:61%"></div></div>
+      </div>
+    </section>
+
+    <section class="thoughts section-shell" id="thoughts" aria-labelledby="thoughts-title">
+      <div class="thoughts-heading reveal"><div><span class="eyebrow">A LITTLE PHILOSOPHY</span><h2 id="thoughts-title">Начните с <em>малого.</em></h2></div><p>О первом шаге и времени, которое принадлежит вам.</p></div>
+      <div class="thoughts-grid">
+        <figure class="thought-quote reveal"><span class="thought-number">01 / СДЕЛАЙТЕ ПЕРВЫЙ ШАГ</span><blockquote cite="https://psylib.org.ua/books/_laotz01.htm"><p>Путешествие в тысячу ли начинается с одного шага.</p></blockquote><figcaption><cite>Лао-цзы</cite><a href="https://psylib.org.ua/books/_laotz01.htm" target="_blank" rel="noopener noreferrer">«Дао дэ цзин», § 64 <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a></figcaption></figure>
+        <figure class="thought-quote reveal"><span class="thought-number">02 / НЕ ОТКЛАДЫВАЙТЕ ЖИЗНЬ</span><blockquote cite="https://chtv.ru/nravstvennye-pisma-k-luciliyu-62-64-chast-1"><p>Пока мы откладываем жизнь, она проходит.</p></blockquote><figcaption><cite>Сенека</cite><a href="https://chtv.ru/nravstvennye-pisma-k-luciliyu-62-64-chast-1" target="_blank" rel="noopener noreferrer">«Нравственные письма к Луцилию», I <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="details section-shell" id="details" aria-labelledby="details-title">
+      <div class="section-top reveal"><span class="eyebrow">03 / ПРОСТОТА В КАЖДОЙ ДЕТАЛИ</span><span class="small-type">КОНЦЕПТ КОЛЛЕКЦИИ / 2026</span></div>
+      <div class="details-heading reveal"><h2 id="details-title">Хороший дизайн<br>начинается <em>с деталей.</em></h2><p>Матовая поверхность, два нейтральных цвета корпуса и мягкое пастельное освещение.</p></div>
+      <div class="detail-grid">
+        <article class="detail-card form-card reveal"><span class="card-number">01 / ФОРМА</span><div class="detail-art cap-art" aria-hidden="true"><img src="./assets/lamp-gray.svg" alt="" loading="lazy" width="680" height="740"></div><h3>Мягкость в каждой линии</h3><p>Скульптурный силуэт, который хочется рассматривать даже при дневном свете.</p></article>
+        <article class="detail-card touch-card reveal"><span class="card-number">02 / УПРАВЛЕНИЕ</span><div class="detail-art touch-art" aria-hidden="true"><div class="touch-rings"><i></i><i></i><i></i><span><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-sun"/></svg></span></div><span class="touch-instruction">ОДНО ЛЁГКОЕ КАСАНИЕ</span></div><h3>Управление одним касанием</h3><p>Коснитесь основания, чтобы включить свет или выбрать режим. Всё под рукой.</p></article>
+        <article class="detail-card color-card reveal"><span class="card-number">03 / КОРПУС</span><div class="detail-art color-art" aria-hidden="true"><span></span><span></span></div><h3>Серый или белый</h3><p>Два спокойных оттенка корпуса. Цвет освещения и яркость выбираете вы.</p></article>
+      </div>
+      <div class="spec-line reveal"><span>ПРЕДСТАВЛЯЕМ AURA 01</span><span>ОКРУГЛЫЙ ПЛАФОН</span><span>МАТОВАЯ ФАКТУРА</span><span>ШЕСТЬ ПАСТЕЛЬНЫХ ОТТЕНКОВ</span><span>СВЕТ ПОД ВАШЕ НАСТРОЕНИЕ <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-star"/></svg></span></div>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-title">
+      <div class="closing-orbit" aria-hidden="true"></div><span class="eyebrow reveal">УЮТ НАЧИНАЕТСЯ С МЕЛОЧЕЙ</span>
+      <h2 class="reveal" id="closing-title">Ну что,<br><em>включим уют?</em></h2><button class="button button-lime reveal" data-open-config>Настроить свой свет <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow"/></svg></button><p class="closing-note">Настройте свет под себя. Сохраните свой вариант.</p><svg class="closing-star" aria-hidden="true"><use href="#icon-star"/></svg>
+    </section>
+
+    <section class="faq section-shell" id="faq" aria-labelledby="faq-title"><div class="faq-title reveal"><span class="eyebrow">КОРОТКО О ГЛАВНОМ</span><h2 id="faq-title">Есть <em>вопросы?</em></h2></div><div class="faq-list reveal"><details><summary>Что такое AURA?<span aria-hidden="true">+</span></summary><p>AURA — концепт светильника с белым или серым корпусом. Выберите пастельный цвет освещения и яркость: они настраиваются независимо от цвета корпуса. Это вымышленный продукт: заказать светильник нельзя.</p></details><details><summary>Какие есть режимы света?<span aria-hidden="true">+</span></summary><p>Для освещения доступны персиковый, пудровый, лавандовый, небесный, мятный и сливочный оттенки. Сценарии «В потоке», «На паузе» и «Без спешки» предлагают готовые сочетания. Цвет и яркость можно изменить отдельно.</p></details><details><summary>Как сохранить свой вариант AURA?<span aria-hidden="true">+</span></summary><p>Нажмите «Настроить AURA», выберите белый или серый корпус, цвет освещения и яркость. Затем нажмите «Скачать карточку» — браузер сохранит изображение с выбранными настройками.</p></details></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-top"><a class="wordmark" href="#" aria-label="AURA — наверх"><img class="brand-lockup" src="./assets/aura-logo.svg" width="272" height="96" alt="AURA"></a><span>Меньше суеты.<br>Больше уюта.</span><a class="back-to-top" href="#">К началу <span aria-hidden="true">↑</span></a></div><div class="footer-bottom"><span>© AURA STUDIO, 2026</span><span>ДИЗАЙН-КОНЦЕПТ. ВЫМЫШЛЕННЫЙ ПРОДУКТ.</span><button id="motion-toggle" aria-pressed="false"><span class="motion-dot"></span><span id="motion-label">Анимация включена</span></button></div></footer>
+
+  <dialog class="config-dialog" id="config-dialog" aria-labelledby="config-title" aria-describedby="config-intro">
+    <div class="config-top">
+      <span class="wordmark"><img class="brand-lockup" src="./assets/aura-logo.svg" width="272" height="96" alt="AURA"></span>
+      <div class="config-header-actions"><button class="reset-config" id="reset-config" type="button">Сбросить</button><button class="close-dialog" type="button" aria-label="Закрыть конфигуратор">×</button></div>
+    </div>
+    <div class="config-body">
+      <div class="config-preview" data-mood="relax"><span class="eyebrow">ВАША AURA 01</span><div class="config-glow" aria-hidden="true"></div><svg xmlns="http://www.w3.org/2000/svg" width="680" height="740" viewBox="0 0 680 740" fill="none" class=" lamp-illustration" data-lamp="config" role="img" aria-label="AURA: белый корпус и мягкий персиковый свет" id="config-lamp">
+<defs>
+<linearGradient id="config-cap" x1="190" y1="122" x2="502" y2="402" gradientUnits="userSpaceOnUse"><stop stop-color="#fffefa" style="stop-color:var(--body-hi,#fffefa)" /><stop offset=".28" stop-color="#eeece7" style="stop-color:var(--body-mid,#eeece7)" /><stop offset=".65" stop-color="#dcdcd7" style="stop-color:var(--body-base,#dcdcd7)" /><stop offset="1" stop-color="#acafb1" style="stop-color:var(--body-dark,#acafb1)" /></linearGradient>
+<linearGradient id="config-stem" x1="245" y1="480" x2="429" y2="485" gradientUnits="userSpaceOnUse"><stop stop-color="#acafb1" style="stop-color:var(--body-dark,#acafb1)" /><stop offset=".2" stop-color="#dcdcd7" style="stop-color:var(--body-base,#dcdcd7)" /><stop offset=".44" stop-color="#fffefa" style="stop-color:var(--body-hi,#fffefa)" /><stop offset=".68" stop-color="#eeece7" style="stop-color:var(--body-mid,#eeece7)" /><stop offset="1" stop-color="#acafb1" style="stop-color:var(--body-dark,#acafb1)" /></linearGradient>
+<linearGradient id="config-rim" x1="340" y1="304" x2="340" y2="393" gradientUnits="userSpaceOnUse"><stop stop-color="#dcdcd7" style="stop-color:var(--body-base,#dcdcd7)" /><stop offset=".47" stop-color="#acafb1" style="stop-color:var(--body-dark,#acafb1)" /><stop offset="1" stop-color="#eeece7" style="stop-color:var(--body-mid,#eeece7)" /></linearGradient>
+<radialGradient id="config-light"><stop offset="0" stop-color="#fffaf6" stop-opacity="1" data-light-stop="core" /><stop offset=".58" stop-color="#f3c5aa" stop-opacity="1" data-light-stop="color" style="stop-color:rgb(var(--light-rgb,243,197,170))" /><stop offset="1" stop-color="#f3c5aa" stop-opacity=".8" data-light-stop="color" style="stop-color:rgb(var(--light-rgb,243,197,170))" /></radialGradient><radialGradient id="config-highlight"><stop stop-color="#ffffff" stop-opacity=".6" /><stop offset="1" stop-color="#ffffff" stop-opacity="0" /></radialGradient>
+<radialGradient id="config-spill"><stop offset="0" stop-color="#f3c5aa" stop-opacity=".65" data-light-stop="color" style="stop-color:rgb(var(--light-rgb,243,197,170))" /><stop offset="1" stop-color="#f3c5aa" stop-opacity="0" data-light-stop="color" style="stop-color:rgb(var(--light-rgb,243,197,170))" /></radialGradient><filter id="config-shadow"><feGaussianBlur stdDeviation="15" /></filter>
+<filter id="config-grain"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch" /><feColorMatrix type="saturate" values="0" /><feComponentTransfer><feFuncA type="linear" slope=".035" /></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply" /></filter>
+<filter id="config-light-soft" x="-40%" y="-100%" width="180%" height="300%"><feGaussianBlur stdDeviation="18" /></filter></defs>
+<ellipse cx="351" cy="640" rx="183" ry="23" fill="#303827" fill-opacity=".25" filter="url(#config-shadow)" />
+<g class="lamp-power"><ellipse cx="345" cy="618" rx="269" ry="90" fill="url(#config-spill)" class="lamp-emission" opacity=".65" />
+</g><g class="lamp-power"><ellipse class="lamp-emission" cx="341" cy="387" rx="207" ry="67" fill="url(#config-spill)" filter="url(#config-light-soft)" opacity=".65" /></g><path d="M397 606C446 635 459 650 516 648C560 647 591 636 634 653" stroke="#85898d" stroke-opacity=".5" stroke-width="2.5" />
+<path d="M293 330C291 403 280 508 254 583C245 609 267 624 339 625C409 626 438 610 429 583C403 507 392 403 389 330H293Z" fill="url(#config-stem)" />
+<ellipse cx="341" cy="605" rx="85" ry="18" fill="#acafb1" fill-opacity=".22" style="fill:var(--body-dark,#acafb1)" />
+<path d="M302 385C301 439 292 534 275 582" stroke="#fffefa" stroke-opacity=".25" stroke-width="1.5" style="stroke:var(--body-hi,#fffefa)" />
+<path d="M318 393C318 450 313 547 305 603" stroke="#fffefa" stroke-opacity=".16" stroke-width="1.5" style="stroke:var(--body-hi,#fffefa)" />
+<path d="M364 393C364 450 369 547 377 603" stroke="#acafb1" stroke-opacity=".11" stroke-width="1.5" style="stroke:var(--body-dark,#acafb1)" />
+<path d="M379 386C383 449 391 534 409 582" stroke="#acafb1" stroke-opacity=".13" stroke-width="1.5" style="stroke:var(--body-dark,#acafb1)" />
+<ellipse cx="341" cy="335" rx="224" ry="54" fill="url(#config-rim)" />
+<g class="lamp-power"><ellipse cx="341" cy="344" rx="198" ry="33" fill="url(#config-light)" class="lamp-emission" opacity=".65" />
+</g><path d="M117 328C120 206 208 108 325 103C451 98 560 193 565 328C565 349 468 374 342 374C216 374 117 349 117 328Z" fill="url(#config-cap)" />
+<ellipse cx="270" cy="209" rx="124" ry="105" transform="rotate(-29 270 209)" fill="url(#config-highlight)" opacity=".65" />
+<path d="M119 327C125 348 222 373 341 373C459 373 556 349 563 328" stroke="#fffefa" stroke-opacity=".62" stroke-width="1.8" style="stroke:var(--body-hi,#fffefa)" />
+<ellipse cx="339" cy="598" rx="9" ry="3" fill="#acafb1" fill-opacity=".65" style="fill:var(--body-dark,#acafb1)" />
+<path d="M336 596L336 600M343 596L343 600" stroke="#fffefa" stroke-opacity=".7" stroke-width=".8" style="stroke:var(--body-hi,#fffefa)" />
+</svg><span class="config-preview-label">НЕЙТРАЛЬНЫЙ КОРПУС. ПАСТЕЛЬНЫЙ СВЕТ.</span></div>
+      <div class="config-options">
+        <h2 id="config-title">Настройте <em>AURA.</em></h2>
+        <p class="config-intro" id="config-intro">Корпус — серый или белый. Освещение — в пастельных тонах.</p>
+        <fieldset><legend>1. Цвет корпуса</legend><div class="finish-options">
+          <button type="button" class="finish-option selected" data-finish="white" aria-pressed="true"><i style="--swatch:#f3f1ed" aria-hidden="true"></i><span>Белый<small>Молочно-белый</small></span></button>
+          <button type="button" class="finish-option" data-finish="gray" aria-pressed="false"><i style="--swatch:#c8ccd1" aria-hidden="true"></i><span>Серый<small>Мягкий серый</small></span></button>
+        </div></fieldset>
+        <fieldset class="config-light-picker"><legend>2. Цвет освещения <span id="config-light-label">Персиковый</span></legend><div class="light-palette"><button type="button" class="light-option selected" data-light="peach" aria-pressed="true" style="--light-swatch:#f3c5aa"><i aria-hidden="true"></i><span>Персиковый</span></button><button type="button" class="light-option" data-light="rose" aria-pressed="false" style="--light-swatch:#eac6d3"><i aria-hidden="true"></i><span>Пудровый</span></button><button type="button" class="light-option" data-light="lavender" aria-pressed="false" style="--light-swatch:#cfc8eb"><i aria-hidden="true"></i><span>Лавандовый</span></button><button type="button" class="light-option" data-light="sky" aria-pressed="false" style="--light-swatch:#bdd7e9"><i aria-hidden="true"></i><span>Небесный</span></button><button type="button" class="light-option" data-light="mint" aria-pressed="false" style="--light-swatch:#c7ddd0"><i aria-hidden="true"></i><span>Мятный</span></button><button type="button" class="light-option" data-light="butter" aria-pressed="false" style="--light-swatch:#f0e1b5"><i aria-hidden="true"></i><span>Сливочный</span></button></div></fieldset>
+        <div class="config-brightness"><label for="config-brightness">3. Яркость <output id="config-brightness-value" for="config-brightness">65%</output></label><input type="range" id="config-brightness" min="10" max="100" value="65" style="--range:61%"><div class="range-labels" aria-hidden="true"><span>Приглушённый</span><span>Яркий</span></div></div>
+      </div>
+    </div>
+    <div class="config-footer">
+      <div class="config-selection"><span>Ваш вариант</span><p id="config-selection-summary" aria-live="polite" aria-atomic="true">Белый · Персиковый · 65%</p></div>
+      <button type="button" class="button button-primary save-config" id="save-config"><span id="save-config-label">Скачать карточку</span><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+      <p class="config-disclaimer">Дизайн-концепт. Без покупки и оплаты.</p>
+      <p class="save-status" id="save-status" role="status" aria-live="polite"></p>
+    </div>
+  </dialog>
+  <noscript><div class="noscript-note">Для интерактивных сценариев и конфигуратора включите JavaScript в браузере.</div></noscript>
+</body>
+</html>
