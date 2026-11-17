@@ -4,19 +4,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5f3eb">
-  <meta name="description" content="AURA — светильник, который подстраивает цвет света под вас и создаёт уют. Выберите серый или белый корпус, пастельный цвет освещения и яркость в интерактивном концепте.">
+  <meta name="description" content="Создайте свой уют с AURA: два цвета корпуса, шесть пастельных оттенков света и плавная яркость. Настройте светильник и попробуйте демо-заказ в портфолио.">
   <meta property="og:title" content="AURA — свет, который подстраивается под вас">
   <meta property="og:description" content="Цвет света под ваше настроение. AURA подстраивается под вас и создаёт уют — для работы, отдыха и спокойных вечеров.">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="AURA">
+  <meta property="og:image" content="https://aura-light-studio.littledawn8.chatgpt.site/assets/social-preview.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="AURA: белый и серый светильники в пастельном свете. Ваш цвет. Ваш уют.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AURA — ваш цвет. Ваш уют.">
+  <meta name="twitter:description" content="Выберите свой корпус, пастельный свет и яркость. Попробуйте демо-заказ AURA.">
+  <meta name="twitter:image" content="https://aura-light-studio.littledawn8.chatgpt.site/assets/social-preview.png">
+  <meta name="twitter:image:alt" content="Белый и серый светильники AURA с мягким свечением">
+  <meta name="robots" content="index,follow">
   <meta property="og:url" content="https://aura-light-studio.littledawn8.chatgpt.site">
   <link rel="canonical" href="https://aura-light-studio.littledawn8.chatgpt.site">
   <title>AURA — свет, который подстраивается под вас</title>
   <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
   <link rel="preload" as="font" href="./assets/manrope-regular.ttf" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./pages.css">
+  <script src="./site-config.js" defer></script>
+  <script src="./site.js" defer></script>
   <script src="./app.js" defer></script>
 </head>
-<body>
+<body class="has-mobile-order">
   <a class="skip-link" href="#main">К содержимому</a>
   <div class="scroll-progress" aria-hidden="true"></div>
   <svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -31,7 +47,7 @@
     <nav class="desktop-nav" aria-label="Основная навигация">
       <a href="#about">О светильнике</a><a href="#moods">Попробовать свет</a><a href="#thoughts">Философия</a><a href="#faq">Вопросы</a>
     </nav>
-    <button class="button button-small button-primary header-cta" data-open-config aria-label="Настроить AURA"><span class="button-label-full">Настроить AURA</span><span class="button-label-short" aria-hidden="true">Настроить</span><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+    <a class="button button-small button-primary header-cta" href="/order/" data-order-link data-source="header" aria-label="Оставить демо-заявку на AURA"><span class="button-label-full">Оставить заявку</span><span class="button-label-short" aria-hidden="true">Заявка</span><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
     <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
   </header>
   <nav class="mobile-nav" id="mobile-nav" aria-label="Мобильная навигация" hidden>
@@ -45,9 +61,10 @@
         <h1 id="hero-title"><span class="title-line">Ваш цвет.</span><span class="title-line">Ваш <em>уют.</em><svg class="title-spark" viewBox="0 0 32 32" aria-hidden="true"><use href="#icon-star"/></svg></span></h1>
         <p class="hero-description intro-animate">AURA — светильник, который подстраивает цвет света под вас и создаёт уют.<br class="desktop-break"> Для работы, отдыха и спокойных вечеров.</p>
         <div class="hero-actions intro-animate">
-          <button class="button button-primary" data-open-config>Настроить свой свет <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow"/></svg></button>
-          <a class="watch-link" href="#moods"><span class="play-circle"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m4 2 6 4-6 4Z" fill="currentColor"/></svg></span>Посмотреть режимы</a>
+          <a class="button button-primary" href="/order/" data-order-link data-source="hero">Оставить заявку <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+          <button class="button button-outline" data-open-config>Настроить свет <svg class="icon" aria-hidden="true"><use href="#icon-sun"/></svg></button>
         </div>
+        <p class="hero-response"><span>ДЕМО ДЛЯ ПОРТФОЛИО</span> В реальном заказе ответим в течение нескольких часов.</p>
         <div class="hero-note intro-animate"><span class="tiny-swatches" aria-hidden="true"><i></i><i></i></span><p>Для чтения, <strong>отдыха и разговоров.</strong></p></div>
       </div>
 
@@ -188,13 +205,23 @@
 
     <section class="closing" aria-labelledby="closing-title">
       <div class="closing-orbit" aria-hidden="true"></div><span class="eyebrow reveal">УЮТ НАЧИНАЕТСЯ С МЕЛОЧЕЙ</span>
-      <h2 class="reveal" id="closing-title">Ну что,<br><em>включим уют?</em></h2><button class="button button-lime reveal" data-open-config>Настроить свой свет <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow"/></svg></button><p class="closing-note">Настройте свет под себя. Сохраните свой вариант.</p><svg class="closing-star" aria-hidden="true"><use href="#icon-star"/></svg>
+      <h2 class="reveal" id="closing-title">Ну что,<br><em>включим уют?</em></h2><div class="closing-actions"><a class="button button-lime reveal" href="/order/" data-order-link data-source="closing">Оставить заявку <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow"/></svg></a><button class="button button-outline reveal" data-open-config>Сначала настроить свет</button></div><p class="closing-note">Попробуйте демо-заказ. В реальном сценарии ответим в течение нескольких часов.</p><svg class="closing-star" aria-hidden="true"><use href="#icon-star"/></svg>
     </section>
 
-    <section class="faq section-shell" id="faq" aria-labelledby="faq-title"><div class="faq-title reveal"><span class="eyebrow">КОРОТКО О ГЛАВНОМ</span><h2 id="faq-title">Есть <em>вопросы?</em></h2></div><div class="faq-list reveal"><details><summary>Что такое AURA?<span aria-hidden="true">+</span></summary><p>AURA — концепт светильника с белым или серым корпусом. Выберите пастельный цвет освещения и яркость: они настраиваются независимо от цвета корпуса. Это вымышленный продукт: заказать светильник нельзя.</p></details><details><summary>Какие есть режимы света?<span aria-hidden="true">+</span></summary><p>Для освещения доступны персиковый, пудровый, лавандовый, небесный, мятный и сливочный оттенки. Сценарии «В потоке», «На паузе» и «Без спешки» предлагают готовые сочетания. Цвет и яркость можно изменить отдельно.</p></details><details><summary>Как сохранить свой вариант AURA?<span aria-hidden="true">+</span></summary><p>Нажмите «Настроить AURA», выберите белый или серый корпус, цвет освещения и яркость. Затем нажмите «Скачать карточку» — браузер сохранит изображение с выбранными настройками.</p></details></div></section>
+    <section class="faq section-shell" id="faq" aria-labelledby="faq-title"><div class="faq-title reveal"><span class="eyebrow">ПЯТЬ ОТВЕТОВ О ГЛАВНОМ</span><h2 id="faq-title">Свет без<br><em>лишних вопросов.</em></h2></div><div class="faq-list reveal">
+      <details><summary>Как оставить заявку на AURA?<span aria-hidden="true">+</span></summary><p>Выберите свет в конфигураторе и нажмите «К заявке» или <a href="/order/" data-order-link data-source="faq">откройте форму</a>. Вариант светильника перейдёт в неё автоматически. Сейчас это демо для портфолио: используйте тестовые данные, сообщения в Telegram не отправляются.</p></details>
+      <details><summary>Цвет корпуса и цвет света — разные настройки?<span aria-hidden="true">+</span></summary><p>Да. Корпус бывает молочно-белым или мягким серым. Освещение — персиковым, пудровым, лавандовым, небесным, мятным или сливочным. Попробуйте сочетания в <a href="#moods">световой сцене</a>: корпус остаётся нейтральным.</p></details>
+      <details><summary>Можно ли менять яркость и сохранять свой вариант?<span aria-hidden="true">+</span></summary><p>Яркость регулируется от 10 до 100% независимо от оттенка. Выбор сохраняется в браузере. В конфигураторе можно скачать SVG-карточку с фактическими настройками или нажать «Сбросить».</p></details>
+      <details><summary>Когда и где вы ответите на заявку?<span aria-hidden="true">+</span></summary><p>В сценарии реального заказа команда AURA Studio ответит в Telegram в течение нескольких часов. В этой демонстрации вы увидите страницу благодарности, а связь с менеджером только показана в интерфейсе.</p></details>
+      <details><summary>Это настоящий заказ? Что будет с моими данными?<span aria-hidden="true">+</span></summary><p>AURA — вымышленный продукт и портфолио-концепт. Покупки, оплаты и отправки заявки здесь нет. Имя и Telegram остаются в памяти страницы; для теста можно заполнить пример. Подробнее — в <a href="/privacy/">политике конфиденциальности</a>.</p></details>
+    </div></section>
   </main>
 
-  <footer class="site-footer"><div class="footer-top"><a class="wordmark" href="#" aria-label="AURA — наверх"><img class="brand-lockup" src="./assets/aura-logo.svg" width="272" height="96" alt="AURA"></a><span>Меньше суеты.<br>Больше уюта.</span><a class="back-to-top" href="#">К началу <span aria-hidden="true">↑</span></a></div><div class="footer-bottom"><span>© AURA STUDIO, 2026</span><span>ДИЗАЙН-КОНЦЕПТ. ВЫМЫШЛЕННЫЙ ПРОДУКТ.</span><button id="motion-toggle" aria-pressed="false"><span class="motion-dot"></span><span id="motion-label">Анимация включена</span></button></div></footer>
+  <footer class="site-footer">
+  <div class="footer-top"><a class="wordmark" href="/" aria-label="AURA — на главную"><img class="brand-lockup" src="/assets/aura-logo.svg" width="272" height="96" alt="AURA"></a><span>Меньше суеты.<br>Больше уюта.</span><a class="back-to-top" href="#main">К началу <span aria-hidden="true">↑</span></a></div>
+  <nav class="footer-links" aria-label="Ссылки в подвале"><a href="/#about">О светильнике</a><a href="/#moods">Цвет и яркость</a><a href="/order/" data-order-link data-source="footer">Оставить заявку</a><a href="/#faq">Частые вопросы</a><a href="/privacy/">Конфиденциальность</a><button type="button" data-cookie-settings hidden>Настройки аналитики</button></nav>
+  <div class="footer-bottom"><span>© AURA STUDIO, 2026</span><span>ПОРТФОЛИО-КОНЦЕПТ. ВЫМЫШЛЕННЫЙ ПРОДУКТ.</span><button id="motion-toggle" aria-pressed="false"><span class="motion-dot"></span><span id="motion-label">Анимация включена</span></button></div>
+</footer>
 
   <dialog class="config-dialog" id="config-dialog" aria-labelledby="config-title" aria-describedby="config-intro">
     <div class="config-top">
@@ -241,11 +268,16 @@
     </div>
     <div class="config-footer">
       <div class="config-selection"><span>Ваш вариант</span><p id="config-selection-summary" aria-live="polite" aria-atomic="true">Белый · Персиковый · 65%</p></div>
-      <button type="button" class="button button-primary save-config" id="save-config"><span id="save-config-label">Скачать карточку</span><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+      <div class="config-action-row"><button type="button" class="button button-outline save-config" id="save-config"><span id="save-config-label">Скачать карточку</span><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button><a class="button button-primary config-order" href="/order/" data-order-link data-source="config">К заявке <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a></div>
       <p class="config-disclaimer">Дизайн-концепт. Без покупки и оплаты.</p>
       <p class="save-status" id="save-status" role="status" aria-live="polite"></p>
     </div>
   </dialog>
+<aside class="mobile-order-bar" aria-label="Быстрая заявка"><div><strong>Ваша AURA</strong>Демо-заказ · без оплаты</div><a class="button button-primary" href="/order/" data-order-link data-source="mobile_sticky">Оставить заявку <span aria-hidden="true">↗</span></a></aside>
+<section class="consent-banner" id="analytics-consent" aria-label="Настройки аналитики" hidden>
+  <p>Разрешите аналитику? Она поможет понять, как пользуются сайтом. Форма заявки в аналитику не передаётся. <a href="/privacy/#analytics">Подробнее</a></p>
+  <div class="consent-actions"><button type="button" class="button button-outline" data-consent="denied">Без аналитики</button><button type="button" class="button button-primary" data-consent="granted">Разрешить</button></div>
+</section>
   <noscript><div class="noscript-note">Для интерактивных сценариев и конфигуратора включите JavaScript в браузере.</div></noscript>
 </body>
 </html>

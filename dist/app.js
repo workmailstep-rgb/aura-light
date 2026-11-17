@@ -49,6 +49,8 @@
 
   function updateSelectionSummary() {
     $('#config-selection-summary').textContent = `${finishes[state.finish].name} · ${lightColors[state.light].name} · ${state.brightness}%`;
+    const parameters = new URLSearchParams({ body: state.finish, light: state.light, brightness: String(state.brightness) });
+    $$('[data-order-link]').forEach(link => { link.href = '/order/?' + parameters; });
   }
 
   function persist() {
@@ -310,6 +312,7 @@
       link.remove();
       setTimeout(() => URL.revokeObjectURL(url), 60000);
       $('#save-status').textContent = 'Готово! Карточка скачивается.';
+      window.AuraAnalytics?.track('download_config', { body_finish: configuration.finish, light_color: configuration.light, brightness: configuration.brightness });
       clearTimeout(saveStatusTimer);
       saveStatusTimer = setTimeout(() => { $('#save-status').textContent = ''; }, 10000);
     } catch {
