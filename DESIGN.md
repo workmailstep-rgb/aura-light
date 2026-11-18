@@ -1,5 +1,5 @@
 ---
-version: "6"
+version: "7"
 name: AURA
 description: A warm, editorial product landing page for a designer lamp whose light color adapts to the visitor and creates comfort.
 colors:
@@ -85,7 +85,9 @@ components:
 Показывайте, как пастельный цвет освещения и его яркость меняют атмосферу комнаты.
 
 Тексты — естественный русский, обращение на «вы». Английские декоративные
-подписи сохраняются: «A LITTLE LIGHT. A LOT OF FEELING.», «A LITTLE PHILOSOPHY».
+подписи сохраняются: «A LITTLE LIGHT. A LOT OF FEELING.», «A LITTLE INSPIRATION».
+Раздел с цитатами называется «Вдохновение» в навигации; заголовок блока —
+«Немного вдохновения». Существующий якорь `#thoughts` сохраняется.
 Мотивирующие цитаты Лао-цзы и Сенеки сопровождаются авторами и ссылками на
 произведения; точный текст цитат не меняется при стилистической редактуре.
 
