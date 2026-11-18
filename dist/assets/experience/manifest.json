@@ -1,0 +1,98 @@
+{
+  "entry": "enhancements.js",
+  "mask": "../liquid-logo-depth.png",
+  "initial": {
+    "files": [
+      "enhancements.js",
+      "chunk-YNJAFRN2.js"
+    ],
+    "gzip": 1405
+  },
+  "modules": [
+    {
+      "file": "chunk-5PFJFE2O.js",
+      "bytes": 1160571,
+      "gzip": 320990,
+      "sha256": "5d8ead886967a0c5fc1ed741112bcb1e476c6ba9399d9c11fe835d0b17aa9de8",
+      "entry": null,
+      "imports": [
+        {
+          "file": "chunk-YNJAFRN2.js",
+          "kind": "import-statement",
+          "external": false
+        }
+      ]
+    },
+    {
+      "file": "chunk-YNJAFRN2.js",
+      "bytes": 777,
+      "gzip": 493,
+      "sha256": "4afbea09a35355daa9026f6e69a9013241b67c76107a2785b5c197e1fada8c2f",
+      "entry": null,
+      "imports": []
+    },
+    {
+      "file": "enhancements.js",
+      "bytes": 1778,
+      "gzip": 912,
+      "sha256": "6e6ee933129f9690ca493cd3388e85f717dfdd25fedee1db2ac3aa39fd4cb9e7",
+      "entry": "src/enhancements.js",
+      "imports": [
+        {
+          "file": "chunk-YNJAFRN2.js",
+          "kind": "import-statement",
+          "external": false
+        },
+        {
+          "file": "hero-3d-VRU3W77X.js",
+          "kind": "dynamic-import",
+          "external": false
+        },
+        {
+          "file": "liquid-logo-GWVWH4RG.js",
+          "kind": "dynamic-import",
+          "external": false
+        }
+      ]
+    },
+    {
+      "file": "hero-3d-VRU3W77X.js",
+      "bytes": 5414,
+      "gzip": 2418,
+      "sha256": "49d1225f2736b50beb7d79a4b79023458488bb2b12c8c0fe9eb298ce674d4a4d",
+      "entry": "src/hero-3d.jsx",
+      "imports": [
+        {
+          "file": "chunk-5PFJFE2O.js",
+          "kind": "import-statement",
+          "external": false
+        },
+        {
+          "file": "chunk-YNJAFRN2.js",
+          "kind": "import-statement",
+          "external": false
+        }
+      ]
+    },
+    {
+      "file": "liquid-logo-GWVWH4RG.js",
+      "bytes": 8553,
+      "gzip": 3179,
+      "sha256": "fefa7791d118e0ef9e05110834bf42b579cc996afd7966c9a93a936dd69c421b",
+      "entry": "src/liquid-logo.jsx",
+      "imports": [
+        {
+          "file": "chunk-5PFJFE2O.js",
+          "kind": "import-statement",
+          "external": false
+        },
+        {
+          "file": "chunk-YNJAFRN2.js",
+          "kind": "import-statement",
+          "external": false
+        }
+      ]
+    }
+  ],
+  "notices": "THIRD_PARTY.txt"
+}

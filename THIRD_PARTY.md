@@ -11,6 +11,21 @@
 
 Интерьерная фотография: [Unsplash, photo-1600210492486-724fe5c67fb0](https://images.unsplash.com/photo-1600210492486-724fe5c67fb0). Локальная копия: `dist/assets/interior.jpg`. Условия: [Unsplash License](https://unsplash.com/license).
 
+## 3D и эффект логотипа
+
+- [React Three Fiber](https://github.com/pmndrs/react-three-fiber), React,
+  React DOM и Three.js — MIT. Точные версии и integrity-хеши npm зафиксированы
+  в `package-lock.json`; лицензии используемого runtime собраны в
+  [THIRD_PARTY.txt](dist/assets/experience/THIRD_PARTY.txt).
+- Шейдер [Paper Design / Liquid Logo](https://github.com/paper-design/liquid-logo)
+  и адаптация подготовки маски — **PolyForm Shield 1.0.0**, с ограничением на
+  конкурирующие продукты. AURA использует их как эффект собственной марки в
+  конечном продукте. Это не MIT-лицензия. Сохранены [полный текст](third_party/liquid-logo-LICENSE.md)
+  и [provenance с upstream-коммитом и Git blob](third_party/NOTICE.md).
+
+Пример Next.js, сервис загрузки изображений, Vercel Blob, сторонние логотипы и
+аналитика из Liquid Logo в проект не включены.
+
 ## Дизайн-референсы
 
 Коллекция [VoltAgent / awesome-design-md](https://github.com/VoltAgent/awesome-design-md), MIT. Выбранные разборы Oura и Framer, исходный README, каталог и лицензия сохранены в [.agents/skills/awesome-design-md/references](.agents/skills/awesome-design-md/references/). Точный upstream-коммит и SHA-256 файлов указаны в [SOURCES.json](.agents/skills/awesome-design-md/references/SOURCES.json).

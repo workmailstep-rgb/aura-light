@@ -28,9 +28,11 @@
   <link rel="preload" as="font" href="./assets/manrope-regular.ttf" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./pages.css">
+  <link rel="stylesheet" href="./experience.css">
   <script src="./site-config.js" defer></script>
   <script src="./site.js" defer></script>
   <script src="./app.js" defer></script>
+  <script type="module" src="./assets/experience/enhancements.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">К содержимому</a>
@@ -100,7 +102,7 @@
 <path d="M119 327C125 348 222 373 341 373C459 373 556 349 563 328" stroke="#fffefa" stroke-opacity=".62" stroke-width="1.8" style="stroke:var(--body-hi,#fffefa)" />
 <ellipse cx="339" cy="598" rx="9" ry="3" fill="#acafb1" fill-opacity=".65" style="fill:var(--body-dark,#acafb1)" />
 <path d="M336 596L336 600M343 596L343 600" stroke="#fffefa" stroke-opacity=".7" stroke-width=".8" style="stroke:var(--body-hi,#fffefa)" />
-</svg></div>
+</svg><div class="hero-3d" id="hero-3d" aria-hidden="true"></div></div>
         <span class="floating-note"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-sun"/></svg><span><span id="hero-light-name">Персиковый</span><br>цвет освещения</span></span>
         <button class="power-switch" id="hero-power" aria-pressed="true" aria-label="Выключить свет"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v8m-5-5a8 8 0 1 0 10 0"/></svg></button>
         <div class="art-bottom"><span><span class="status-dot"></span> <span id="hero-light-status">СВЕТ ВКЛЮЧЁН</span></span><span>ВЫБЕРИТЕ ЦВЕТ КОРПУСА.</span></div>
@@ -218,7 +220,7 @@
   </main>
 
   <footer class="site-footer">
-  <div class="footer-top"><a class="wordmark" href="/" aria-label="AURA — на главную"><img class="brand-lockup" src="/assets/aura-logo.svg" width="272" height="96" alt="AURA"></a><span>Меньше суеты.<br>Больше уюта.</span><a class="back-to-top" href="#main">К началу <span aria-hidden="true">↑</span></a></div>
+  <div class="footer-top"><a class="wordmark" href="/" aria-label="AURA — на главную"><span class="liquid-logo-shell" id="liquid-logo"><img class="brand-lockup" src="/assets/aura-logo.svg" width="272" height="96" alt="AURA"><span class="liquid-logo-canvas" id="liquid-logo-canvas" aria-hidden="true"></span></span></a><span>Меньше суеты.<br>Больше уюта.</span><a class="back-to-top" href="#main">К началу <span aria-hidden="true">↑</span></a></div>
   <nav class="footer-links" aria-label="Ссылки в подвале"><a href="/#about">О светильнике</a><a href="/#moods">Цвет и яркость</a><a href="/order/" data-order-link data-source="footer">Оставить заявку</a><a href="/#faq">Частые вопросы</a><a href="/privacy/">Конфиденциальность</a><button type="button" data-cookie-settings hidden>Настройки аналитики</button></nav>
   <div class="footer-bottom"><span>© AURA STUDIO, 2026</span><span>ПОРТФОЛИО-КОНЦЕПТ. ВЫМЫШЛЕННЫЙ ПРОДУКТ.</span><button id="motion-toggle" aria-pressed="false"><span class="motion-dot"></span><span id="motion-label">Анимация включена</span></button></div>
 </footer>

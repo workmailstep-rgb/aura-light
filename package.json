@@ -1,0 +1,22 @@
+{
+  "name": "aura-light-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AURA: a static product experience with progressive React Three Fiber and Liquid Logo islands.",
+  "scripts": {
+    "build": "node tools/build-experience.mjs",
+    "test:3d": "node tools/test-experience.mjs",
+    "check": "node --check dist/app.js && python3 verify.py"
+  },
+  "dependencies": {
+    "@react-three/fiber": "9.8.2",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "@react-three/test-renderer": "9.1.1",
+    "esbuild": "0.28.2"
+  }
+}

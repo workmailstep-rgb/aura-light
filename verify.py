@@ -3,6 +3,8 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit, unquote
 import json
+import hashlib
+import gzip
 import re
 import struct
 import xml.etree.ElementTree as ET
@@ -121,6 +123,34 @@ for source in (ROOT / 'artwork').glob('*.svg'):
     ET.parse(source)
 png = (DIST / 'assets/social-preview.png').read_bytes()
 assert png[:8] == b'\x89PNG\r\n\x1a\n' and struct.unpack('>II', png[16:24]) == (1200, 630)
+mask = (DIST / 'assets/liquid-logo-depth.png').read_bytes()
+assert mask[:8] == b'\x89PNG\r\n\x1a\n' and struct.unpack('>II', mask[16:24]) == (544, 192)
+bundle_dir = DIST / 'assets/experience'
+bundle = json.loads((bundle_dir / 'manifest.json').read_text())
+modules = {item['file']: item for item in bundle['modules']}
+assert bundle['entry'] in modules
+eager = set()
+
+
+def verify_module(file):
+    if file in eager:
+        return
+    eager.add(file)
+    for dependency in modules[file]['imports']:
+        if dependency['kind'] != 'dynamic-import':
+            verify_module(dependency['file'])
+
+
+for file, module in modules.items():
+    assert Path(file).name == file, f'Invalid bundle module path: {file}'
+    data = (bundle_dir / file).read_bytes()
+    assert len(data) == module['bytes'] and hashlib.sha256(data).hexdigest() == module['sha256']
+    for dependency in module['imports']:
+        assert not dependency['external'] and dependency['file'] in modules, f'Nonlocal or missing module in {file}'
+verify_module(bundle['entry'])
+assert eager == set(bundle['initial']['files'])
+assert sum(len(gzip.compress((bundle_dir / file).read_bytes())) for file in eager) < 8192
+assert 'PolyForm Shield' in (bundle_dir / bundle['notices']).read_text()
 sitemap = ET.parse(DIST / 'sitemap.xml')
 urls = [item.text for item in sitemap.findall('.//{*}loc')]
 assert urls == [ORIGIN + '/', ORIGIN + '/order/', ORIGIN + '/privacy/']
@@ -132,4 +162,4 @@ if manifest_path.is_file():
 assert (DIST / 'assets/interior.jpg').stat().st_size > 10000
 for font in ('manrope-regular.ttf', 'manrope-semibold.ttf', 'playfair-italic.ttf'):
     assert (DIST / 'assets' / font).stat().st_size > 10000, font
-print('PASS: 5 pages; unique titles, H1s and descriptions; internal routes/fragments, ARIA, 5 FAQs, social PNG, sitemap and local assets verified.')
+print('PASS: 5 pages; SEO, routes/fragments, ARIA, 5 FAQs, social PNG, sitemap, local assets, 3D module integrity and lazy bootstrap budget verified.')
