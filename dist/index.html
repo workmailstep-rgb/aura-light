@@ -137,18 +137,17 @@
 
     <section class="moods" id="moods" aria-labelledby="moods-title" data-mood="relax">
       <div class="mood-copy">
-        <span class="eyebrow reveal">02 / СВЕТ ДЛЯ РАБОТЫ И ОТДЫХА</span>
-        <h2 class="reveal" id="moods-title">Меняет цвет.<br>Создаёт <em>уют.</em></h2>
-        <p class="mood-intro reveal">Начните с готового сценария или выберите свой пастельный цвет. Яркость настраивается отдельно.</p>
+        <span class="eyebrow reveal">TRY THE LIGHT</span>
+        <h2 class="reveal" id="moods-title">Примерь <em>свет.</em></h2>
+        <p class="mood-intro reveal">Переключайте режимы и смотрите, как один светильник меняет одну и ту же комнату.</p>
         <div class="mood-tabs" role="tablist" aria-orientation="horizontal" aria-label="Сценарии освещения">
-          <button role="tab" id="tab-focus" aria-controls="mood-panel" aria-selected="false" tabindex="-1" data-mood="focus"><span class="tab-icon" aria-hidden="true">↗</span><span class="tab-copy"><span>В потоке</span><small>Для работы</small></span><span class="tab-time">90%</span></button>
-          <button role="tab" id="tab-relax" aria-controls="mood-panel" aria-selected="true" tabindex="0" data-mood="relax" class="active"><span class="tab-icon" aria-hidden="true">☀</span><span class="tab-copy"><span>На паузе</span><small>Для отдыха</small></span><span class="tab-time">65%</span></button>
-          <button role="tab" id="tab-evening" aria-controls="mood-panel" aria-selected="false" tabindex="-1" data-mood="evening"><span class="tab-icon" aria-hidden="true">☾</span><span class="tab-copy"><span>Без спешки</span><small>Перед сном</small></span><span class="tab-time">30%</span></button>
+          <button role="tab" id="tab-focus" aria-controls="mood-panel" aria-selected="false" tabindex="-1" data-mood="focus"><span class="tab-copy"><span>Работа</span><small>Ясный свет</small></span><span class="tab-time">90%</span></button>
+          <button role="tab" id="tab-relax" aria-controls="mood-panel" aria-selected="true" tabindex="0" data-mood="relax" class="active"><span class="tab-copy"><span>Отдых</span><small>Тёплый свет</small></span><span class="tab-time">65%</span></button>
+          <button role="tab" id="tab-evening" aria-controls="mood-panel" aria-selected="false" tabindex="-1" data-mood="evening"><span class="tab-copy"><span>Вечер</span><small>Мягкий свет</small></span><span class="tab-time">30%</span></button>
         </div>
-        <fieldset class="scene-light-picker"><legend>Цвет освещения <span id="scene-light-label">Персиковый</span></legend><div class="light-palette"><button type="button" class="light-option selected" data-light="peach" aria-pressed="true" style="--light-swatch:#f3c5aa"><i aria-hidden="true"></i><span>Персиковый</span></button><button type="button" class="light-option" data-light="rose" aria-pressed="false" style="--light-swatch:#eac6d3"><i aria-hidden="true"></i><span>Пудровый</span></button><button type="button" class="light-option" data-light="lavender" aria-pressed="false" style="--light-swatch:#cfc8eb"><i aria-hidden="true"></i><span>Лавандовый</span></button><button type="button" class="light-option" data-light="sky" aria-pressed="false" style="--light-swatch:#bdd7e9"><i aria-hidden="true"></i><span>Небесный</span></button><button type="button" class="light-option" data-light="mint" aria-pressed="false" style="--light-swatch:#c7ddd0"><i aria-hidden="true"></i><span>Мятный</span></button><button type="button" class="light-option" data-light="butter" aria-pressed="false" style="--light-swatch:#f0e1b5"><i aria-hidden="true"></i><span>Сливочный</span></button></div></fieldset>
-        <div class="mood-panel" id="mood-panel" role="tabpanel" aria-labelledby="tab-relax" tabindex="0"><p id="mood-description">Для спокойной паузы и любимой музыки. Выберите пастельный оттенок и подходящую яркость.</p></div>
+        <div class="mood-panel" aria-live="polite" aria-atomic="true"><p id="mood-description">Тёплый свет для спокойной паузы, любимой музыки и разговоров.</p></div>
       </div>
-      <div class="mood-visual">
+      <div class="mood-visual" id="mood-panel" role="tabpanel" aria-labelledby="tab-relax" aria-describedby="mood-description" tabindex="0">
         <div class="scene-window" aria-hidden="true"><span></span><span></span></div>
         <div class="scene-glow" aria-hidden="true"></div>
         <div class="scene-sun" aria-hidden="true"></div>
@@ -181,9 +180,10 @@
 <ellipse cx="339" cy="598" rx="9" ry="3" fill="#acafb1" fill-opacity=".65" style="fill:var(--body-dark,#acafb1)" />
 <path d="M336 596L336 600M343 596L343 600" stroke="#fffefa" stroke-opacity=".7" stroke-width=".8" style="stroke:var(--body-hi,#fffefa)" />
 </svg>
-        <div class="scene-label"><span class="status-dot"></span><span id="scene-label">МОЖНО НИКУДА НЕ СПЕШИТЬ</span></div>
+        <div class="scene-label"><span>ОДНА КОМНАТА. ОДНА AURA.</span><strong id="scene-label">Свет для отдыха</strong></div>
         <div class="scene-controls"><div><span class="scene-control-title">Цвет света <i class="scene-color-dot" aria-hidden="true"></i></span><span class="scene-color-name" id="scene-color-name">Персиковый</span></div><span class="scene-divider"></span><div><label class="scene-control-title" for="scene-brightness">Яркость <output id="brightness-value" for="scene-brightness">65%</output></label><input type="range" id="scene-brightness" min="10" max="100" value="65" aria-label="Яркость света" style="--range:61%"></div></div>
       </div>
+        <fieldset class="scene-light-picker"><legend>Цвет освещения <span id="scene-light-label">Персиковый</span></legend><div class="light-palette"><button type="button" class="light-option selected" data-light="peach" aria-pressed="true" style="--light-swatch:#f3c5aa"><i aria-hidden="true"></i><span>Персиковый</span></button><button type="button" class="light-option" data-light="rose" aria-pressed="false" style="--light-swatch:#eac6d3"><i aria-hidden="true"></i><span>Пудровый</span></button><button type="button" class="light-option" data-light="lavender" aria-pressed="false" style="--light-swatch:#cfc8eb"><i aria-hidden="true"></i><span>Лавандовый</span></button><button type="button" class="light-option" data-light="sky" aria-pressed="false" style="--light-swatch:#bdd7e9"><i aria-hidden="true"></i><span>Небесный</span></button><button type="button" class="light-option" data-light="mint" aria-pressed="false" style="--light-swatch:#c7ddd0"><i aria-hidden="true"></i><span>Мятный</span></button><button type="button" class="light-option" data-light="butter" aria-pressed="false" style="--light-swatch:#f0e1b5"><i aria-hidden="true"></i><span>Сливочный</span></button></div></fieldset>
     </section>
 
     <section class="thoughts section-shell" id="thoughts" aria-labelledby="thoughts-title">
@@ -213,7 +213,7 @@
     <section class="faq section-shell" id="faq" aria-labelledby="faq-title"><div class="faq-title reveal"><span class="eyebrow">ПЯТЬ ОТВЕТОВ О ГЛАВНОМ</span><h2 id="faq-title">Свет без<br><em>лишних вопросов.</em></h2></div><div class="faq-list reveal">
       <details><summary>Для чего подходит AURA?<span aria-hidden="true">+</span></summary><p>Для рабочего стола, чтения и спокойного отдыха. Выберите оттенок и яркость под своё занятие: более яркий свет — для дел, приглушённый — для вечерней паузы. Попробовать сочетания можно в <a href="#moods">световой сцене</a>.</p></details>
       <details><summary>Какие цвета корпуса и освещения доступны?<span aria-hidden="true">+</span></summary><p>Корпус — молочно-белый или мягкий серый. Для света доступны шесть пастельных оттенков: персиковый, пудровый, лавандовый, небесный, мятный и сливочный. Цвет освещения выбирается независимо от корпуса.</p></details>
-      <details><summary>Можно ли менять яркость и выбирать готовые режимы?<span aria-hidden="true">+</span></summary><p>Да. Яркость регулируется от 10 до 100%. Есть три готовых сценария: «В потоке» — для работы, «На паузе» — для отдыха, «Без спешки» — для вечера. Любой оттенок и уровень яркости можно изменить вручную.</p></details>
+      <details><summary>Можно ли менять яркость и выбирать готовые режимы?<span aria-hidden="true">+</span></summary><p>Да. Яркость регулируется от 10 до 100%. В блоке «Примерь свет» есть три режима: «Работа», «Отдых» и «Вечер». Комната и светильник остаются теми же — меняются цвет света и яркость. Их также можно настроить вручную.</p></details>
       <details><summary>Как настроить светильник и сохранить свой вариант?<span aria-hidden="true">+</span></summary><p>Нажмите «Настроить свет» и выберите корпус, оттенок и яркость. Вариант сохранится в этом браузере. Его можно скачать карточкой, а настройки — вернуть к исходным кнопкой «Сбросить».</p></details>
       <details><summary>Как оставить заявку и когда будет ответ?<span aria-hidden="true">+</span></summary><p>Откройте <a href="/order/" data-order-link data-source="faq">форму заявки</a>: ваш вариант AURA перенесётся в неё автоматически. В реальном заказе ответим в Telegram в течение нескольких часов. Сейчас это демо для портфолио: используйте тестовые данные, оплата и отправка сообщений не предусмотрены.</p></details>
     </div></section>

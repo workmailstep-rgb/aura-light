@@ -19,9 +19,9 @@
     butter: { name: 'Сливочный', file: 'slivochnyy', hex: '#f0e1b5', rgb: [240, 225, 181] },
   };
   const moods = {
-    focus: { name: 'В потоке', light: 'sky', brightness: 90, label: 'СВЕТ ДЛЯ ВАШИХ ИДЕЙ', description: 'Для работы, чтения и новых идей. Выберите пастельный оттенок и удобную яркость.' },
-    relax: { name: 'На паузе', light: 'peach', brightness: 65, label: 'МОЖНО НИКУДА НЕ СПЕШИТЬ', description: 'Для спокойной паузы и любимой музыки. Выберите пастельный оттенок и подходящую яркость.' },
-    evening: { name: 'Без спешки', light: 'lavender', brightness: 30, label: 'ТИХИЙ ВЕЧЕР В ВАШЕМ РИТМЕ', description: 'Для вечернего отдыха и чтения перед сном. Цвет освещения и яркость можно менять отдельно.' },
+    focus: { name: 'Работа', light: 'sky', brightness: 90, label: 'Свет для работы', description: 'Больше света для работы, чтения и новых идей.' },
+    relax: { name: 'Отдых', light: 'peach', brightness: 65, label: 'Свет для отдыха', description: 'Тёплый свет для спокойной паузы, любимой музыки и разговоров.' },
+    evening: { name: 'Вечер', light: 'lavender', brightness: 30, label: 'Свет для вечера', description: 'Мягкое свечение для тихого вечера. Меньше яркости — больше покоя.' },
   };
   const storageKey = 'aura-design-config-v1';
   const motionKey = 'aura-motion-paused';
